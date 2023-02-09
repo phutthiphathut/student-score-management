@@ -4,12 +4,16 @@
 
     <meta charset="UTF-8">
     <title> {{pageName}} </title>
-    <link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css') }}" >
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/main.css') }}" >
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/student/course.css') }}" >
 
 </head>
 <body>
+    <div class="box">
+        <p class="name">Student Name</p>
+        <p class="name1">Student ID</p>
+   
 
-    <h1>{{pageName}}</h1>
-    <h1 style="color: darkred;">This is my {{pageName}}</h1>
+    </div>
 </body>
 </html>
