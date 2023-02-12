@@ -1,43 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{pageName}}</title>
 
-    <meta charset="UTF-8">
-    <title> {{pageName}} </title>
-    <link rel="stylesheet" href="{{ url_for ('static', filename='css/main.css') }}" >
-    <link rel="stylesheet" href="{{ url_for ('static', filename='css/student/profile.css') }}">
-</head>
-<body>
-    <div class="box">
-        <p class="name">Student Name</p>
-        <p class="name1">Student ID</p>
-    
-    </div>
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/navbar.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/student/profile.css') }}"
+    />
+  </head>
 
-    <div id="main-container">
-        <div id="data-table-container">
-          <table id="data-table">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Firstname</th>
-                <th>Surname</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>458970001</td>
-                <td>Chat</td>
-                <td>GPT</td>
-              </tr>
-              <tr>
-                <td>458970001</td>
-                <td>Chat</td>
-                <td>GPT</td>
-              </tr>
-            </tbody>
-          </table>
+  <body>
+    <div class="page_container">
+      <div class="nav_bar">
+        <div class="header">
+          <img
+            class="logo_img img_left"
+            src="{{ url_for ('static', filename='img/logo.jpg') }}"
+            alt="ABAC Logo"
+          />
+          <img
+            class="logo_img img_right"
+            src="{{ url_for ('static', filename='img/hamburger.png') }}"
+            alt="hamburger"
+          />
+        </div>
+        <div class="nav_bar_details">
+          <img
+            class="profile_img"
+            src="{{ url_for ('static', filename='img/profile.png') }}"
+            alt="Profile"
+          />
+          <h2>Student Name</h2>
+          <h2>Student ID</h2>
         </div>
       </div>
-</body>
+      <div class="body_content">
+        <h1 style="font-size: 36px; position: absolute;" >Mathematics</h1>
+        <div id="main-container">
+          <div id="data-table-container">
+            <table id="data-table">
+              <thead>
+                <tr>
+                  <th>Items</th>
+                  <th>Full Score</th>
+                  <th>Score</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>-</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>
+                    <div class ="action_container">
+                      <img
+                        class="icon"
+                        src="{{ url_for ('static', filename='img/comment.png') }}"
+                        alt="comment icon"
+                      />
+                      <img
+                        class="icon"
+                        src="{{ url_for ('static', filename='img/information.png') }}"
+                        alt="comment icon"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td><div class ="action_container">
+                    <img
+                      class="icon"
+                      src="{{ url_for ('static', filename='img/comment.png') }}"
+                      alt="comment icon"
+                    />
+                    <img
+                      class="icon"
+                      src="{{ url_for ('static', filename='img/information.png') }}"
+                      alt="comment icon"
+                    />
+                  </div></td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td><div class ="action_container">
+                    <img
+                      class="icon"
+                      src="{{ url_for ('static', filename='img/comment.png') }}"
+                      alt="comment icon"
+                    />
+                    <img
+                      class="icon"
+                      src="{{ url_for ('static', filename='img/information.png') }}"
+                      alt="comment icon"
+                    />
+                  </div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

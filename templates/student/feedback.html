@@ -1,23 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{pageName}}</title>
 
-    <meta charset="UTF-8">
-    <title> {{pageName}} </title>
-    <link rel="stylesheet" href="{{ url_for ('static', filename='css/main.css') }}" >
-    <link rel="stylesheet" href="{{ url_for ('static', filename='css/student/feedback.css') }}">
-</head>
-<body>
-    <h1>QUIZ Feedback</h1>
-    <div class="box">
-        <p class="name">Student Name</p>
-        <p class="name1">Student ID</p>
-    
-    </div>
-    <div class="comment-box">
-        <p class="textbox">Comment</p>
-        <p class="comment-text" p>
-      
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/navbar.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/student/feedback.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="page_container">
+      <div class="nav_bar">
+        <div class="header">
+          <img
+            class="logo_img img_left"
+            src="{{ url_for ('static', filename='img/logo.jpg') }}"
+            alt="ABAC Logo"
+          />
+          <img
+            class="logo_img img_right"
+            src="{{ url_for ('static', filename='img/hamburger.png') }}"
+            alt="hamburger"
+          />
+        </div>
+        <div class="nav_bar_details">
+          <img
+            class="profile_img"
+            src="{{ url_for ('static', filename='img/profile.png') }}"
+            alt="Profile"
+          />
+          <h2>Student Name</h2>
+          <h2>Student ID</h2>
+        </div>
       </div>
-</body>
+      <div class="body_content">
+        <h1>QUIZ Feedback</h1>
+        <div class="comment-box">
+          <div class="comment_title">
+            <p style="font-size: 30px; text-align: left; padding-left: 20px">
+              Comment
+            </p>
+            <p style="font-size: 30px; text-align: right; padding-right: 80px">
+              10/10
+            </p>
+          </div>
+          <p style="text-align: left; font-size: 18px; padding: 20px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            odio nunc, tempor sit amet gravida ut, cursus ut ex. Donec
+            sollicitudin ante ac congue venenatis. Sed nec placerat nisl. Sed
+            volutpat bibendum tortor, a lacinia sapien porta id. Duis porta
+            tortor ante, id accumsan urna ornare in. Quisque volutpat finibus
+            justo, et rhoncus magna tempor in. Cras id nisl in nulla tristique
+            tincidunt. Nulla a tortor id dui faucibus feugiat id dictum massa.
+            Duis ut efficitur sem. Morbi eget turpis non quam tempus porta eget
+            eget libero. Pellentesque nec justo rhoncus, porta lectus sit amet,
+            sollicitudin erat. Praesent condimentum orci magna, lacinia aliquet
+            nisl se
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

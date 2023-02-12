@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{pageName}}</title>
 
-    <meta charset="UTF-8">
-    <title> {{pageName}} </title>
-    <link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css') }}" >
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/navbar.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/student/statistic.css') }}"
+    />
+  </head>
+  <body>
+    <div class="page_container">
+      <div class="nav_bar">
+        <div class="header">
+          <img
+            class="logo_img img_left"
+            src="{{ url_for ('static', filename='img/logo.jpg') }}"
+            alt="ABAC Logo"
+          />
+          <img
+            class="logo_img img_right"
+            src="{{ url_for ('static', filename='img/hamburger.png') }}"
+            alt="hamburger"
+          />
+        </div>
+        <div class="nav_bar_details">
+          <img
+            class="profile_img"
+            src="{{ url_for ('static', filename='img/profile.png') }}"
+            alt="Profile"
+          />
+          <h2>Student Name</h2>
+          <h2>Student ID</h2>
+        </div>
+      </div>
+      <div class="body_content">
+        <img
+            class="averagegraph"
+            src="{{ url_for ('static', filename='img/averagegraph.png') }}"
+            alt="graph"
+          />
+          <h2>Average Score : 68.1</h2>
+          <h2>Your Total Score : 79.5</h2>
+          <h2>Percentile : 75.15</h2>
 
-</head>
-<body>
-
-    <h1>{{pageName}}</h1>
-    <h1 style="color: darkred;">This is my {{pageName}}</h1>
-</body>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,51 @@
+/* Nav Bar */
+
+body {
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .page_container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  
+  .nav_bar {
+    flex: 20%;
+    border-right: 3px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav_bar.header {
+    flex: 10%;
+  }
+  
+  .logo_img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex: 50%;
+  }
+  
+  .img_left {
+    margin-right: 50px;
+  }
+  
+  .img_right {
+    margin-left: 50px;
+  }
+  
+  .nav_bar_details {
+    padding-top: 100px;
+  }
+  
+  .profile_img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 30px;
+    border: 3px solid black;
+  }

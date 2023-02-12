@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{pageName}}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/navbar.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/student/score.css') }}"
+    />
+  </head>
 
-    <meta charset="UTF-8">
-    <title> {{pageName}} </title>
-    <link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css') }}" >
-
-</head>
-<body>
-
-    <h1>{{pageName}}</h1>
-    <h1 style="color: darkred;">This is my {{pageName}}</h1>
-</body>
+  <body>
+    <div class="page_container">
+      <div class="nav_bar">
+        <div class="header">
+          <img
+            class="logo_img img_left"
+            src="{{ url_for ('static', filename='img/logo.jpg') }}"
+            alt="ABAC Logo"
+          />
+          <img
+            class="logo_img img_right"
+            src="{{ url_for ('static', filename='img/hamburger.png') }}"
+            alt="hamburger"
+          />
+        </div>
+        <div class="nav_bar_details">
+          <img
+            class="profile_img"
+            src="{{ url_for ('static', filename='img/profile.png') }}"
+            alt="Profile"
+          />
+          <h2>Student Name</h2>
+          <h2>Student ID</h2>
+        </div>
+      </div>
+      <div class="body_content">
+        <h1>QUIZ Score Appeal</h1>
+        <div class="comment-box">
+          <p style="font-size: 30px; text-align: left; padding-left: 20px">
+            Reason
+          </p>
+          <form action="#" method="post">
+            <textarea
+              name="comment"
+              id="comment"
+              rows="5"
+              style="text-align: justify"
+              placeholder=" "
+            ></textarea>
+            <div style="text-align: right">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
