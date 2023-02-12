@@ -1,5 +1,6 @@
-import string
+
 from flask import Flask, render_template
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -42,17 +43,29 @@ def teacherProfile():
 def teacherCourse():
     return render_template('/teacher/course.html', pageName= 'Teacher Course')
 
+@app.route('/teacher/course/feedback')
+def teacherFeedback():
+    return render_template('/teacher/feedback.html', pageName= 'Teacher Feedback')
+
 @app.route('/teacher/course/student')
 def teacherStudentList():
     return render_template('/teacher/student_list.html', pageName= 'Course Student List')
 
-@app.route('/program_director/profile')
-def programDirectorProfile():
-    return render_template('/program_director/profile.html', pageName= 'Program Director Profile')
+@app.route('/program_director/statistic')
+def programDirectorStatistic():
+    return render_template('/program_director/statistic.html', pageName= 'Course Statistic')
 
 @app.route('/program_director/course')
 def programDirectorCourse():
     return render_template('/program_director/course.html', pageName= 'Program Director Course')
+
+@app.route('/program_director/course/appeal')
+def programDirectorCourseAppealList():
+    return render_template('/program_director/appeal_list.html', pageName= 'Course Appeal List')
+
+@app.route('/program_director/course/appeal/detail')
+def programDirectorCourseAppealDetail():
+    return render_template('/program_director/appeal_detail.html', pageName= 'Course Appeal Detail')
 
 if __name__ == '__main__':
     app.run(debug=True)

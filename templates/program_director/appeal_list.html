@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{pageName}}</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/navbar.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/program_director/appeal_list.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="page_container">
+      <div class="nav_bar">
+        <div class="header">
+          <img
+            class="logo_img img_left"
+            src="{{ url_for ('static', filename='img/logo.jpg') }}"
+            alt="ABAC Logo"
+          />
+          <img
+            class="logo_img img_right"
+            src="{{ url_for ('static', filename='img/hamburger.png') }}"
+            alt="hamburger"
+          />
+        </div>
+        <div class="nav_bar_details">
+          <img
+            class="profile_img"
+            src="{{ url_for ('static', filename='img/profile.png') }}"
+            alt="Profile"
+          />
+          <h2>Program Director Name</h2>
+          <h2>PD ID</h2>
+        </div>
+      </div>
+      <div class="body_content">
+        <h1 style="font-size: 36px; position: absolute;" >Appeal List</h1>
+        <div id="main-container">
+          <div id="data-table-container">
+            <table id="data-table">
+              <thead>
+                <tr>
+                  <th>Items</th>
+                  <th>Evaluation</th>
+                  <th>Score</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Quiz</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>
+                    <div class ="action_container">
+                      <img
+                        class="icon"
+                        src="{{ url_for ('static', filename='img/comment.png') }}"
+                        alt="comment icon"
+                      />
+                      <img
+                        class="icon"
+                        src="{{ url_for ('static', filename='img/waiting.png') }}"
+                        alt="comment icon"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                    <td>Quiz</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>
+                      <div class ="action_container">
+                        <img
+                          class="icon"
+                          src="{{ url_for ('static', filename='img/comment.png') }}"
+                          alt="comment icon"
+                        />
+                        <img
+                          class="icon"
+                          src="{{ url_for ('static', filename='img/waiting.png') }}"
+                          alt="comment icon"
+                        />
+                      </div>
+                    </td>
+                  </tr>  <tr>
+                    <td>Quiz</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>
+                      <div class ="action_container">
+                        <img
+                          class="icon"
+                          src="{{ url_for ('static', filename='img/comment.png') }}"
+                          alt="comment icon"
+                        />
+                        <img
+                          class="icon"
+                          src="{{ url_for ('static', filename='img/approve.png') }}"
+                          alt="comment icon"
+                        />
+                      </div>
+                    </td>
+                  </tr>  <tr>
+                    <td>Quiz</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>
+                      <div class ="action_container">
+                        <img
+                          class="icon"
+                          src="{{ url_for ('static', filename='img/comment.png') }}"
+                          alt="comment icon"
+                        />
+                        <img
+                          class="icon"
+                          src="{{ url_for ('static', filename='img/reject.png') }}"
+                          alt="comment icon"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,15 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{pageName}}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/navbar.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/teacher/course.css') }}"
+    />
+  </head>
 
-    <meta charset="UTF-8">
-    <title> {{pageName}} </title>
-    <link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css') }}" >
+  <body>
+    <div class="page_container">
+      <div class="nav_bar">
+        <div class="header">
+          <img
+            class="logo_img img_left"
+            src="{{ url_for ('static', filename='img/logo.jpg') }}"
+            alt="ABAC Logo"
+          />
+          <img
+            class="logo_img img_right"
+            src="{{ url_for ('static', filename='img/hamburger.png') }}"
+            alt="hamburger"
+          />
+        </div>
+        <div class="nav_bar_details">
+          <img
+            class="profile_img"
+            src="{{ url_for ('static', filename='img/profile.png') }}"
+            alt="Profile"
+          />
+          <h2>Teacher Name</h2>
+          <h2>Teacher ID</h2>
+        </div>
+      </div>
 
-</head>
-<body>
+      <div class="body_content">
+        <h1>Teacher Courses 1/2022</h1>
+        <div class="course_item">
+          <div class="title">
+            <h3 class="course_code_text">SUB101</h3>
+            <div class="course_name_time">
+              <p class="course_name_text">MATHEMATICS</p>
+              <p class="course_name_text">09:00 - 12:00 M.</p>
+            </div>
+          </div>
 
-    <h1>{{pageName}}</h1>
-    <h1 style="color: darkred;">This is my {{pageName}}</h1>
-</body>
+          <div class="grading">
+            <img
+              class="arrow_right"
+              src="{{ url_for ('static', filename='img/arrow_right.png') }}"
+              alt="Arrow_right"
+            />
+          </div>
+        </div>
+        <div class="course_item">
+          <div class="title">
+            <h3 class="course_code_text">SUB101</h3>
+            <div class="course_name_time">
+              <p class="course_name_text">MATHEMATICS</p>
+              <p class="course_name_text">09:00 - 12:00 M.</p>
+            </div>
+          </div>
+
+          <div class="grading">
+            <img
+              class="arrow_right"
+              src="{{ url_for ('static', filename='img/arrow_right.png') }}"
+              alt="Arrow_right"
+            />
+          </div>
+        </div>
+        <div class="course_item">
+          <div class="title">
+            <h3 class="course_code_text">SUB101</h3>
+            <div class="course_name_time">
+              <p class="course_name_text">MATHEMATICS</p>
+              <p class="course_name_text">09:00 - 12:00 M.</p>
+            </div>
+          </div>
+
+          <div class="grading">
+            <img
+              class="arrow_right"
+              src="{{ url_for ('static', filename='img/arrow_right.png') }}"
+              alt="Arrow_right"
+            />
+          </div>
+        </div>
+        <div class="course_item">
+          <div class="title">
+            <h3 class="course_code_text">SUB101</h3>
+            <div class="course_name_time">
+              <p class="course_name_text">MATHEMATICS</p>
+              <p class="course_name_text">09:00 - 12:00 M.</p>
+            </div>
+          </div>
+
+          <div class="grading">
+            <img
+              class="arrow_right"
+              src="{{ url_for ('static', filename='img/arrow_right.png') }}"
+              alt="Arrow_right"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

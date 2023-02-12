@@ -1,15 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{pageName}}</title>
 
-    <meta charset="UTF-8">
-    <title> {{pageName}} </title>
-    <link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css') }}" >
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/navbar.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/teacher/student_list.css') }}"
+    />
+  </head>
 
-</head>
-<body>
+  <body>
+    <div class="page_container">
+      <div class="nav_bar">
+        <div class="header">
+          <img
+            class="logo_img img_left"
+            src="{{ url_for ('static', filename='img/logo.jpg') }}"
+            alt="ABAC Logo"
+          />
+          <img
+            class="logo_img img_right"
+            src="{{ url_for ('static', filename='img/hamburger.png') }}"
+            alt="hamburger"
+          />
+        </div>
+        <div class="nav_bar_details">
+          <img
+            class="profile_img"
+            src="{{ url_for ('static', filename='img/profile.png') }}"
+            alt="Profile"
+          />
+          <h2>Teacher Name</h2>
+          <h2>Teacher ID</h2>
+        </div>
+      </div>
+      <div class="body_content">
+        <h1 style="font-size: 36px; position: absolute">Mathematics</h1>
+        <div id="main-container">
+          <div id="data-table-container">
+            <table id="data-table">
+              <thead>
+                <tr>
+                  <th>Student ID</th>
+                  <th>Student Name</th>
+                  <th>Total Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1010001</td>
+                  <td>Alexander Stein</td>
 
-    <h1>{{pageName}}</h1>
-    <h1 style="color: darkred;">This is my {{pageName}}</h1>
-</body>
+                  <td>
+                    <div class="action_container">
+                    60
+                      <img
+                        class="icon"
+                        src="{{ url_for ('static', filename='img/informationteacher.png') }}"
+                        alt="comment icon"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                    <td>1010001</td>
+                    <td>Alexander Stein</td>
+  
+                    <td>
+                      <div class="action_container">
+                      60
+                        <img
+                          class="icon"
+                          src="{{ url_for ('static', filename='img/informationteacher.png') }}"
+                          alt="comment icon"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1010001</td>
+                    <td>Alexander Stein</td>
+  
+                    <td>
+                      <div class="action_container">
+                      60
+                        <img
+                          class="icon"
+                          src="{{ url_for ('static', filename='img/informationteacher.png') }}"
+                          alt="comment icon"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
